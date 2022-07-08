@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="4" passed="3" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-07-07T08:40:33Z" name="Suite" finished-at="2022-07-07T08:41:28Z" duration-ms="55664">
+    <groups>
+    </groups>
+    <test started-at="2022-07-07T08:40:33Z" name="Login Text Verification" finished-at="2022-07-07T08:40:41Z" duration-ms="7768">
+      <class name="nftTicketing.LoginTextVerification">
+        <test-method is-config="true" signature="Initialize()[pri:0, instance:nftTicketing.LoginTextVerification@6c8a68c1]" started-at="2022-07-07T14:10:33Z" name="Initialize" finished-at="2022-07-07T14:10:40Z" duration-ms="7499" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Initialize -->
+        <test-method signature="LoginLabels()[pri:0, instance:nftTicketing.LoginTextVerification@6c8a68c1]" started-at="2022-07-07T14:10:40Z" name="LoginLabels" finished-at="2022-07-07T14:10:40Z" duration-ms="148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginLabels -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:nftTicketing.LoginTextVerification@6c8a68c1]" started-at="2022-07-07T14:10:40Z" name="TearDown" finished-at="2022-07-07T14:10:41Z" duration-ms="109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- nftTicketing.LoginTextVerification -->
+    </test> <!-- Login Text Verification -->
+    <test started-at="2022-07-07T08:40:41Z" name="Login with Incorrect Credentials" finished-at="2022-07-07T08:40:54Z" duration-ms="13379">
+      <class name="nftTicketing.LoginIncorrectCredentials">
+        <test-method is-config="true" signature="Initialize()[pri:0, instance:nftTicketing.LoginIncorrectCredentials@4f7c0be3]" started-at="2022-07-07T14:10:41Z" name="Initialize" finished-at="2022-07-07T14:10:48Z" duration-ms="6832" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Initialize -->
+        <test-method signature="LoginInvalidCredential()[pri:0, instance:nftTicketing.LoginIncorrectCredentials@4f7c0be3]" started-at="2022-07-07T14:10:48Z" name="LoginInvalidCredential" finished-at="2022-07-07T14:10:54Z" duration-ms="6258" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [User doesn't exists] but found [User doesn't exist]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [User doesn't exists] but found [User doesn't exist]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at nftTicketing.LoginIncorrectCredentials.LoginInvalidCredential(LoginIncorrectCredentials.java:42)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginInvalidCredential -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:nftTicketing.LoginIncorrectCredentials@4f7c0be3]" started-at="2022-07-07T14:10:54Z" name="TearDown" finished-at="2022-07-07T14:10:54Z" duration-ms="157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- nftTicketing.LoginIncorrectCredentials -->
+    </test> <!-- Login with Incorrect Credentials -->
+    <test started-at="2022-07-07T08:40:54Z" name="Login with Incorrect Data" finished-at="2022-07-07T08:41:08Z" duration-ms="13334">
+      <class name="nftTicketing.LoginIncorrectData">
+        <test-method is-config="true" signature="Initialize()[pri:0, instance:nftTicketing.LoginIncorrectData@3bd55d8]" started-at="2022-07-07T14:10:54Z" name="Initialize" finished-at="2022-07-07T14:11:01Z" duration-ms="7012" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Initialize -->
+        <test-method signature="LoginInvalidData()[pri:0, instance:nftTicketing.LoginIncorrectData@3bd55d8]" started-at="2022-07-07T14:11:01Z" name="LoginInvalidData" finished-at="2022-07-07T14:11:08Z" duration-ms="6244" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginInvalidData -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:nftTicketing.LoginIncorrectData@3bd55d8]" started-at="2022-07-07T14:11:08Z" name="TearDown" finished-at="2022-07-07T14:11:08Z" duration-ms="76" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- nftTicketing.LoginIncorrectData -->
+    </test> <!-- Login with Incorrect Data -->
+    <test started-at="2022-07-07T08:41:08Z" name="Login with Valid Credential" finished-at="2022-07-07T08:41:28Z" duration-ms="20577">
+      <class name="nftTicketing.LoginValidCredentials">
+        <test-method is-config="true" signature="Initialize()[pri:0, instance:nftTicketing.LoginValidCredentials@4ee33af7]" started-at="2022-07-07T14:11:08Z" name="Initialize" finished-at="2022-07-07T14:11:15Z" duration-ms="7286" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Initialize -->
+        <test-method signature="LoginValidCredential()[pri:0, instance:nftTicketing.LoginValidCredentials@4ee33af7]" started-at="2022-07-07T14:11:15Z" name="LoginValidCredential" finished-at="2022-07-07T14:11:28Z" duration-ms="13205" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginValidCredential -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:nftTicketing.LoginValidCredentials@4ee33af7]" started-at="2022-07-07T14:11:28Z" name="TearDown" finished-at="2022-07-07T14:11:28Z" duration-ms="81" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- nftTicketing.LoginValidCredentials -->
+    </test> <!-- Login with Valid Credential -->
+  </suite> <!-- Suite -->
+</testng-results>

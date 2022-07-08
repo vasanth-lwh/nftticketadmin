@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="nftTicketing.Listeners"/>
+  </listeners>
+  <test parallel="none" name="Login with Incorrect Credentials(failed)">
+    <classes>
+      <class name="nftTicketing.LoginValidCredentials">
+        <methods>
+          <include name="Initialize"/>
+          <include name="TearDown"/>
+        </methods>
+      </class> <!-- nftTicketing.LoginValidCredentials -->
+      <class name="nftTicketing.LoginIncorrectData">
+        <methods>
+          <include name="Initialize"/>
+          <include name="TearDown"/>
+        </methods>
+      </class> <!-- nftTicketing.LoginIncorrectData -->
+      <class name="nftTicketing.LoginIncorrectCredentials">
+        <methods>
+          <include name="TearDown"/>
+          <include name="Initialize"/>
+          <include name="LoginInvalidCredential"/>
+        </methods>
+      </class> <!-- nftTicketing.LoginIncorrectCredentials -->
+      <class name="nftTicketing.LoginTextVerification">
+        <methods>
+          <include name="Initialize"/>
+          <include name="TearDown"/>
+        </methods>
+      </class> <!-- nftTicketing.LoginTextVerification -->
+    </classes>
+  </test> <!-- Login with Incorrect Credentials(failed) -->
+</suite> <!-- Failed suite [Suite] -->
