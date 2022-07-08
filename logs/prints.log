@@ -1,6 +1,5 @@
-14:10:58.939 [main] INFO  resources.base - Navigated to Signin page
-14:11:08.283 [main] INFO  resources.base - Browser Closed
-14:11:09.211 [main] INFO  resources.base - Driver is initialized
-14:11:09.353 [main] INFO  resources.base - Browser Window Maximized
-14:11:12.688 [main] INFO  resources.base - Navigated to Signin page
-14:11:28.976 [main] INFO  resources.base - Browser Closed
+14:47:56.655 [main] INFO  resources.base - Navigated to Home page
+14:47:58.774 [main] INFO  resources.base - Navigated to Home page
+14:48:01.160 [main] INFO  resources.base - Navigated to Home page
+14:48:03.158 [main] INFO  resources.base - Navigated to Home page
+14:48:08.725 [main] INFO  resources.base - Browser Closed

@@ -2,26 +2,11 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <listeners>
-	<listener class-name="nftTicketing.Listeners"/>
+	<listener class-name="amazon.Listeners"/>
   </listeners>
-  <test name="Login Text Verification">
+  <test name="Login">
     <classes>
-      <class name="nftTicketing.LoginTextVerification"/>
-    </classes>
-  </test>
-    <test name="Login with Incorrect Credentials">
-    <classes>
-      <class name="nftTicketing.LoginIncorrectCredentials"/>
-    </classes>
-  </test>
-    <test name="Login with Incorrect Data">
-    <classes>
-      <class name="nftTicketing.LoginIncorrectData"/>
-    </classes>
-  </test>
-    <test name="Login with Valid Credential">
-    <classes>
-      <class name="nftTicketing.LoginValidCredentials"/>
+      <class name="amazon.Login"/>
     </classes>
   </test>
  <!--   <test name="Full Login Page">

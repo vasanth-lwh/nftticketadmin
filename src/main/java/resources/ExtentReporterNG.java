@@ -11,10 +11,10 @@ public class ExtentReporterNG {
 		
 		String path =System.getProperty("user.dir")+"\\reports\\index.html";
 		ExtentSparkReporter reporter = new ExtentSparkReporter(path);
-		reporter.config().setReportName("NFT Ticketing Admin Automation Results");
-		reporter.config().setDocumentTitle("NFT Ticketing Admin Results");
+		reporter.config().setReportName("Amazon Login Automation Results");
+		reporter.config().setDocumentTitle("Amazon Login Results");
 		
-		extent =new ExtentReports();
+		extent = new ExtentReports();
 		extent.attachReporter(reporter);
 		extent.setSystemInfo("Executed By", "Vasanth");
 		return extent;

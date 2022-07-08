@@ -7,61 +7,50 @@ import org.openqa.selenium.WebElement;
 public class LoginPage 
 {
 	public WebDriver driver;
-	By Email = By.cssSelector("#email");
-	By Password = By.cssSelector("#password");
-	By Signin = By.cssSelector("button[type='submit']");
-	By PasswordEye = By.cssSelector("img[class='passIcon ? \" block cursor-pointer\" : \" hidden\" pr-5 w-11.25 h-6.5 cursor-pointer']");
-	By EmailInvalidError = By.cssSelector(".mt-10");
-	By PasswordInvalidError = By.cssSelector(".mt-4");
-	By EmailClear = By.cssSelector("img[class='pr-5 block cursor-pointer']");
-	By Header = By.cssSelector("h1[class='text-ft7 font-OpenSansSemiBold pt-7.5']");
-	By RememberMe = By.cssSelector("#checkbox");
-	By RememberMeLabel = By.cssSelector("p[class='font-OpenSansRegular text-ft4 text-darkGrey-100 pl-2.5']");
+	By Signin = By.cssSelector("#nav-link-accountList");
+	By Email = By.cssSelector("#ap_email");
+	By Continue = By.xpath("//input[@id='continue']");
+	By EmailEmptyError = By.cssSelector("div[id='auth-email-missing-alert'] div[class='a-alert-content']");
+	By EmailInvalidError = By.cssSelector("ul[class='a-unordered-list a-nostyle a-vertical a-spacing-none'] li");
+	By Password = By.cssSelector("#ap_password");
+	By SigninSubmit = By.cssSelector("#signInSubmit");
+	By PasswordInvalidError = By.cssSelector(".a-list-item");
 	
 	public LoginPage (WebDriver driver) 
 	{
 		this.driver=driver;
 	}
 	
-	
-	public WebElement getEmail()
-	{
-		return driver.findElement(Email);
-	}
-	public WebElement getPassword()
-	{
-		return driver.findElement(Password);
-	}
 	public WebElement getSignin()
 	{
 		return driver.findElement(Signin);
 	}
-	public WebElement getPasswordEye()
+	public WebElement getEmail()
 	{
-		return driver.findElement(PasswordEye);
+		return driver.findElement(Email);
+	}
+	public WebElement getContinue()
+	{
+		return driver.findElement(Continue);
+	}
+	public WebElement getEmailEmptyError()
+	{
+		return driver.findElement(EmailEmptyError);
 	}
 	public WebElement getEmailInvalidError()
 	{
 		return driver.findElement(EmailInvalidError);
 	}
+	public WebElement getPassword()
+	{
+		return driver.findElement(Password);
+	}
+	public WebElement getSigninSubmit()
+	{
+		return driver.findElement(SigninSubmit);
+	}
 	public WebElement getPasswordInvalidError()
 	{
 		return driver.findElement(PasswordInvalidError);
-	}
-	public WebElement getEmailClear()
-	{
-		return driver.findElement(EmailClear);
-	}
-	public WebElement getHeader()
-	{
-		return driver.findElement(Header);
-	}
-	public WebElement getRememberMe()
-	{
-		return driver.findElement(RememberMe);
-	}
-	public WebElement getRememberMeLabel()
-	{
-		return driver.findElement(RememberMeLabel);
 	}
 }

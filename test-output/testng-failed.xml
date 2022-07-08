@@ -2,35 +2,20 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite parallel="none" name="Failed suite [Suite]">
   <listeners>
-    <listener class-name="nftTicketing.Listeners"/>
+    <listener class-name="amazon.Listeners"/>
   </listeners>
-  <test parallel="none" name="Login with Incorrect Credentials(failed)">
+  <test parallel="none" name="Login(failed)">
     <classes>
-      <class name="nftTicketing.LoginValidCredentials">
+      <class name="amazon.Login">
         <methods>
-          <include name="Initialize"/>
-          <include name="TearDown"/>
-        </methods>
-      </class> <!-- nftTicketing.LoginValidCredentials -->
-      <class name="nftTicketing.LoginIncorrectData">
-        <methods>
-          <include name="Initialize"/>
-          <include name="TearDown"/>
-        </methods>
-      </class> <!-- nftTicketing.LoginIncorrectData -->
-      <class name="nftTicketing.LoginIncorrectCredentials">
-        <methods>
+          <include name="signinWithNoData"/>
+          <include name="signinWithInvalidData"/>
+          <include name="signinWithInvalidPassword"/>
+          <include name="signinWithValidData"/>
           <include name="TearDown"/>
           <include name="Initialize"/>
-          <include name="LoginInvalidCredential"/>
         </methods>
-      </class> <!-- nftTicketing.LoginIncorrectCredentials -->
-      <class name="nftTicketing.LoginTextVerification">
-        <methods>
-          <include name="Initialize"/>
-          <include name="TearDown"/>
-        </methods>
-      </class> <!-- nftTicketing.LoginTextVerification -->
+      </class> <!-- amazon.Login -->
     </classes>
-  </test> <!-- Login with Incorrect Credentials(failed) -->
+  </test> <!-- Login(failed) -->
 </suite> <!-- Failed suite [Suite] -->

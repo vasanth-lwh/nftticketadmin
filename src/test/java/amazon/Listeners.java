@@ -1,4 +1,4 @@
-package nftTicketing;
+package amazon;
 
 import java.io.IOException;
 
@@ -21,7 +21,7 @@ public class Listeners extends base implements ITestListener {
 	@Override
 	public void onTestStart(ITestResult result) {
 		// TODO Auto-generated method stub
-		test= extent.createTest(result.getMethod().getMethodName());
+		test= extent.createTest(result.getMethod().getDescription());
 		extentTest.set(test);
 	}
 

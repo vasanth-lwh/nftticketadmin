@@ -1,4 +1,4 @@
-package nftTicketing;
+package amazon;
 
 import java.io.IOException;
 
